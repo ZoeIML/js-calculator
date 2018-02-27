@@ -1,0 +1,87 @@
+.calcBox {
+   max-width: 340px;
+}
+
+
+h1 {
+    font-size: 50px;
+    color: red;
+    font-family: 'Roboto Mono', monospace;
+}
+
+button {
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.showExpression {
+    /* max-width: 300px; */
+    height: 32px;
+    font-weight: 300;
+    font-size: 28px;
+    text-align: right;
+    /* margin-bottom: 25px; */
+    letter-spacing: 2px;
+}
+
+.showResult {
+    /* max-width: 300px;     */
+    height: 32px;    
+    font-weight: 300;
+    font-size: 32px;
+    text-align: right;
+    /* margin-bottom: 25px; */
+    letter-spacing: 2px;
+}
+
+.homeButton {
+    background-color: green;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+.num {
+    background-color: red;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.operator {
+    background-color: blue;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.equalButton {
+    background-color: green;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.makeNegative {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#equal{
+    width: 164px;
+}
+
+
+.row {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+    .container {
+      width: 85%;
+      padding: 0; }
+  }
