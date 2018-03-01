@@ -21,8 +21,9 @@ function init () {
     document.getElementById('/').addEventListener("click", showDiv);
     //equals
     //document.getElementById('=').addEventListener("click", calcIt);
-    //clear 
-    document.getElementById('C').addEventListener("click", clearIt);
+    //clears 
+    //document.getElementById('C').addEventListener("click", clearLast);
+    //document.getElementById('AC').addEventListener("click", clearItAll);
 }
 
 //number functions
@@ -121,10 +122,14 @@ function showDiv() {
 //equals is calcIt - needs to DO SOMETHING IE CALCULATE!
 //function calcIT (){}
 
-//clear function - make C button clear the field. Called clearIt
-function clearIt(){
-   var current = "";
-   document.getElementById('display').innerHTML = current;
+//clear function is like a backspace button - called clearLast
+//function clearLast(){}
+
+//all clear function - make AC button clear the field. Called clearItAll
+var cleanUp = document.getElementById('AC')
+cleanUp.addEventListener("click", clearItAll);
+function clearItAll () {
+    document.getElementById('display').value = '';
 }
 
 
