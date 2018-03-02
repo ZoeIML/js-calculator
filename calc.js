@@ -123,7 +123,16 @@ function showDiv() {
 //function calcIT (){}
 
 //clear function is like a backspace button - called clearLast
-//function clearLast(){}
+var goBack = document.getElementById('C')
+goBack.addEventListener("click", clearLast); 
+function clearLast () { 
+    var string1 = document.getElementById('display').value
+    //console.log(string1);
+    var string2 = string1.slice(0,-1);
+    //console.log(string2);
+    document.getElementById('display').value = string2;
+    
+    }
 
 //all clear function - make AC button clear the field. Called clearItAll
 var cleanUp = document.getElementById('AC')
