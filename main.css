@@ -20,6 +20,7 @@
      border-radius: 50%;
      font-family: 'Roboto Mono', monospace;
      background-color: lightgrey;
+     color: aliceblue;
  
  }
  
@@ -35,6 +36,7 @@
 
  .keys {
      background-color: rosybrown;
+     color: aliceblue;
  }
 
  #C {

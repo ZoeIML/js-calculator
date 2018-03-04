@@ -1,6 +1,7 @@
 var memory;
 
 function init () {
+    
     //numbers:
     document.getElementById('0').addEventListener("click", number0);
     document.getElementById('1').addEventListener("click", number1);
@@ -12,18 +13,23 @@ function init () {
     document.getElementById('7').addEventListener("click", number7);
     document.getElementById('8').addEventListener("click", number8);
     document.getElementById('9').addEventListener("click", number9);
-    //decimal
+   
+    //decimal:
     document.getElementById('.').addEventListener("click", showDot);
+    
     //operators
     document.getElementById('+').addEventListener("click", showPlus);
     document.getElementById('-').addEventListener("click", showMinus);
     document.getElementById('*').addEventListener("click", showTimes);
     document.getElementById('/').addEventListener("click", showDiv);
-    //equals
+   
+    //equals:
     //document.getElementById('=').addEventListener("click", calcIt);
-    //clears 
+    
+    //clears: 
     //document.getElementById('C').addEventListener("click", clearLast);
     //document.getElementById('AC').addEventListener("click", clearItAll);
+
 }
 
 //number functions
@@ -119,10 +125,46 @@ function showDiv() {
     return '/';
 }
 
-//equals is calcIt - needs to DO SOMETHING IE CALCULATE!
-//function calcIT (){}
+//equals button
+var goEquals = document.getElementById('=')
+//console.log(goEquals);
+goEquals.addEventListener("click", letsDoThis);
 
-//clear function is like a backspace button - called clearLast
+/*/group operators 
+var myOps = [
+    document.getElementById('+').value,
+    document.getElementById('-').value,
+    document.getElementById('*').value,
+    document.getElementById('/').value
+]*/
+
+//actual calculator stuff:
+/*var numbers = []
+var operator = ''
+var answer = ''*/
+
+var getEquation = document.getElementById('display').value
+        //console.log(getEquation);
+
+function letsDoThis(){
+    //var getEquation = document.getElementById('display').value
+        //console.log(getEquation);
+
+
+    var splitEqStr = getEquation.split(/[\+\-\*\/]/)
+        console.log(splitEqStr);
+    var numOne = splitEqStr[0]
+        //console.log(numOne);
+    var numTwo = splitEqStr[1]
+        //console.log(numTwo);
+
+    function calcIt(){
+
+    }
+       
+}
+
+//clear button like a backspace
 var goBack = document.getElementById('C')
 goBack.addEventListener("click", clearLast); 
 function clearLast () { 
@@ -131,7 +173,6 @@ function clearLast () {
     var string2 = string1.slice(0,-1);
     //console.log(string2);
     document.getElementById('display').value = string2;
-    
     }
 
 //all clear function - make AC button clear the field. Called clearItAll
