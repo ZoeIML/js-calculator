@@ -129,20 +129,7 @@ function showDiv() {
 var goEquals = document.getElementById('=')
 //console.log(goEquals);
 goEquals.addEventListener("click", letsDoThis);
-
-/*/group operators 
-var myOps = [
-    document.getElementById('+').value,
-    document.getElementById('-').value,
-    document.getElementById('*').value,
-    document.getElementById('/').value
-]*/
-
 //actual calculator stuff:
-/*var numbers = []
-var operator = ''
-var answer = ''*/
-
 
 function letsDoThis(){
     var getEquation = document.getElementById('display').value
@@ -154,10 +141,11 @@ function letsDoThis(){
         //console.log(getEquation);
     var getEqArr = getEquation.split(" ")
         //console.log(getEqArr);
-    var result = eval(getEqArr.join(" "));
-        console.log(result);
-
-} }
+    var theRes = eval(getEqArr.join(" "));
+        console.log(theRes);
+    var printRes = document.getElementById('answer').value = theRes;
+ }
+}
     
        
 
@@ -177,6 +165,7 @@ var cleanUp = document.getElementById('AC')
 cleanUp.addEventListener("click", clearItAll);
 function clearItAll () {
     document.getElementById('display').value = '';
+    document.getElementById('answer').value = '';
 }
 
 
