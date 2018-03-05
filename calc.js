@@ -129,8 +129,8 @@ function showDiv() {
 var goEquals = document.getElementById('=')
 //console.log(goEquals);
 goEquals.addEventListener("click", letsDoThis);
-//actual calculator stuff:
 
+//calculate:
 function letsDoThis(){
     var getEquation = document.getElementById('display').value
         //console.log(getEquation);
@@ -143,6 +143,8 @@ function letsDoThis(){
         //console.log(getEqArr);
     var theRes = eval(getEqArr.join(" "));
         console.log(theRes);
+
+//show the result:
     var printRes = document.getElementById('answer').value = theRes;
  }
 }
