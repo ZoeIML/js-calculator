@@ -22,13 +22,6 @@ function init () {
     document.getElementById('-').addEventListener("click", showMinus);
     document.getElementById('*').addEventListener("click", showTimes);
     document.getElementById('/').addEventListener("click", showDiv);
-   
-    //equals:
-    //document.getElementById('=').addEventListener("click", calcIt);
-    
-    //clears: 
-    //document.getElementById('C').addEventListener("click", clearLast);
-    //document.getElementById('AC').addEventListener("click", clearItAll);
 
 }
 
