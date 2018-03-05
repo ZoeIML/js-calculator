@@ -153,7 +153,9 @@ function letsDoThis(){
         getEquation = getEquation.replace(rg, " " + separators[i] + " ");
         //console.log(getEquation);
     var getEqArr = getEquation.split(" ")
-        console.log(getEqArr);
+        //console.log(getEqArr);
+    var result = eval(getEqArr.join(" "));
+        console.log(result);
 
 } }
     
