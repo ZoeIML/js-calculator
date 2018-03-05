@@ -143,26 +143,21 @@ var myOps = [
 var operator = ''
 var answer = ''*/
 
-var getEquation = document.getElementById('display').value
-        //console.log(getEquation);
 
 function letsDoThis(){
-    //var getEquation = document.getElementById('display').value
+    var getEquation = document.getElementById('display').value
         //console.log(getEquation);
+    var separators =['+', '-', '*', '/'] 
+ for (var i = 0; i < separators.length; i++) {
+        var rg = new RegExp("\\" + separators[i], "g");
+        getEquation = getEquation.replace(rg, " " + separators[i] + " ");
+        //console.log(getEquation);
+    var getEqArr = getEquation.split(" ")
+        console.log(getEqArr);
 
-
-    var splitEqStr = getEquation.split(/[\+\-\*\/]/)
-        console.log(splitEqStr);
-    var numOne = splitEqStr[0]
-        //console.log(numOne);
-    var numTwo = splitEqStr[1]
-        //console.log(numTwo);
-
-    function calcIt(){
-
-    }
+} }
+    
        
-}
 
 //clear button like a backspace
 var goBack = document.getElementById('C')
