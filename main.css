@@ -49,6 +49,13 @@
 
  #display {
      background-color: lightgrey;
+     font-family: 'Roboto Mono', monospace;
+ }
+
+ #answer {
+     background-color: rosybrown;
+     color: aliceblue;
+     font-family: 'Roboto Mono', monospace;
  }
 
  .row {
