@@ -1,9 +1,7 @@
 .container {
-    max-width: 340px;
     border-style: none;
     padding-top: 25px;
     align-content: right;
-    background-color: lightgrey;
  }
 
  h1 {
@@ -35,7 +33,6 @@
  } 
 
  .keys {
-     background-color: rosybrown;
      color: aliceblue;
  }
 
