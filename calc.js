@@ -135,14 +135,12 @@ function letsDoThis(){
     var getEqArr = getEquation.split(" ")
         //console.log(getEqArr);
     var theRes = eval(getEqArr.join(" "));
-        console.log(theRes);
+        //console.log(theRes);
 
 //show the result:
     var printRes = document.getElementById('answer').value = theRes;
  }
-}
-    
-       
+}    
 
 //clear button like a backspace
 var goBack = document.getElementById('C')
@@ -155,13 +153,12 @@ function clearLast () {
     document.getElementById('display').value = string2;
     }
 
-//all clear function - make AC button clear the field. Called clearItAll
+//AC button clears the field
 var cleanUp = document.getElementById('AC')
 cleanUp.addEventListener("click", clearItAll);
 function clearItAll () {
     document.getElementById('display').value = '';
     document.getElementById('answer').value = '';
 }
-
 
 window.addEventListener("load", init);
